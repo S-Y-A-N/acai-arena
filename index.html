@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ACAI Sovereign Arena — Million-Dollar Exhibition Game</title>
+  <meta name="theme-color" content="#070b1c" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="space" aria-hidden="true"></canvas>
+  <div class="aurora aurora-a"></div>
+  <div class="aurora aurora-b"></div>
+  <div class="grain"></div>
+
+  <div id="app" class="app">
+    <header class="topbar">
+      <button class="brand" data-nav="home" aria-label="ACAI Home">
+        <img src="assets/logo.png" alt="ACAI logo" />
+      </button>
+      <nav class="nav">
+        <button data-nav="home" class="active" data-i18n="nav.home">Home</button>
+        <button data-nav="setup" data-i18n="nav.play">Play</button>
+        <button data-nav="research" data-i18n="nav.research">Research Core</button>
+        <button data-nav="studio" data-i18n="nav.studio">Print Studio</button>
+      </nav>
+      <div class="top-actions">
+        <button id="soundBtn" class="icon-btn" title="Sound">◈</button>
+        <button id="langBtn" class="lang-btn">العربية</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <section id="home" class="view active">
+        <div class="hero-grid">
+          <div class="hero-copy panel">
+            <div class="lux-tag"><span></span><b data-i18n="home.kicker">Million-Dollar Exhibition Experience</b></div>
+            <h1>
+              <span data-i18n="home.title1">ACAI Sovereign</span>
+              <strong data-i18n="home.title2">Arena</strong>
+            </h1>
+            <p class="lead" data-i18n="home.lead">
+              A premium multiplayer challenge where visitors compete as Arabic AI strategists: compress models, build RAG pipelines, verify evidence, govern privacy, and command ACAI agents.
+            </p>
+            <div class="hero-actions">
+              <button class="primary big" data-nav="setup"><span data-i18n="home.cta">Enter the Arena</span><i>→</i></button>
+              <button class="secondary big" data-nav="research" data-i18n="home.research">View Research Core</button>
+            </div>
+            <div class="award-strip">
+              <div><b>1–4</b><span data-i18n="home.players">Players</span></div>
+              <div><b>5</b><span data-i18n="home.modes">Elite Modes</span></div>
+              <div><b>100%</b><span data-i18n="home.offline">Offline Ready</span></div>
+              <div><b>AR/EN</b><span data-i18n="home.bilingual">Bilingual</span></div>
+            </div>
+          </div>
+
+          <div class="hero-stage panel">
+            <div class="stage-frame">
+              <div class="stage-top">
+                <span data-i18n="home.live">Live Arena Simulation</span>
+                <strong>$1,000,000</strong>
+              </div>
+              <div class="holo-core">
+                <div class="orbit orbit-1"></div>
+                <div class="orbit orbit-2"></div>
+                <div class="orbit orbit-3"></div>
+                <img src="assets/logo.png" alt="" />
+              </div>
+              <div class="mode-carousel">
+                <button class="mini-mode blue"><b>01</b><span data-i18n="mode.compression.short">Compression</span></button>
+                <button class="mini-mode purple"><b>02</b><span data-i18n="mode.rag.short">RAG</span></button>
+                <button class="mini-mode teal"><b>03</b><span data-i18n="mode.quality.short">Verifier</span></button>
+                <button class="mini-mode orange"><b>04</b><span data-i18n="mode.governance.short">Governance</span></button>
+                <button class="mini-mode gold"><b>05</b><span data-i18n="mode.agent.short">Agents</span></button>
+              </div>
+              <div class="ticker">
+                <span data-i18n="home.ticker">Built for professors, executives, judges, students, and public visitors.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="why-grid">
+          <article class="why-card panel">
+            <span>01</span>
+            <h3 data-i18n="why.challenge.title">It feels like a challenge</h3>
+            <p data-i18n="why.challenge.body">Players are scored on speed, correctness, risk, evidence, and strategic decisions—not just multiple-choice answers.</p>
+          </article>
+          <article class="why-card panel">
+            <span>02</span>
+            <h3 data-i18n="why.academic.title">It shows the real research</h3>
+            <p data-i18n="why.academic.body">Every mode is mapped to ACAI: quantization, pruning, knowledge distillation, RAG, verification, and agent routing.</p>
+          </article>
+          <article class="why-card panel">
+            <span>03</span>
+            <h3 data-i18n="why.executive.title">It feels premium</h3>
+            <p data-i18n="why.executive.body">Luxury dark theme, gold highlights, holographic motion, live leaderboard, and printable reward assets.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- SETUP -->
+      <section id="setup" class="view">
+        <div class="section-head">
+          <div class="lux-tag"><span></span><b data-i18n="setup.kicker">Arena Setup</b></div>
+          <h2 data-i18n="setup.title">Choose your players and tournament style.</h2>
+          <p data-i18n="setup.lead">Use this on an iPad, laptop, or big touch screen. For VIP visitors, use Grand Tournament. For quick booth traffic, choose a single elite mode.</p>
+        </div>
+
+        <div class="setup-grid">
+          <div class="panel setup-panel">
+            <h3 data-i18n="setup.players">Players</h3>
+            <div class="player-count">
+              <button data-count="1" class="selected">1</button>
+              <button data-count="2">2</button>
+              <button data-count="3">3</button>
+              <button data-count="4">4</button>
+            </div>
+            <div id="playerInputs" class="player-inputs"></div>
+          </div>
+
+          <div class="panel setup-panel">
+            <h3 data-i18n="setup.style">Tournament Style</h3>
+            <div class="style-options">
+              <button class="style-card selected" data-style="grand">
+                <b data-i18n="style.grand.title">Grand Tournament</b>
+                <span data-i18n="style.grand.body">All five modes. Best for judges and main demonstration.</span>
+              </button>
+              <button class="style-card" data-style="single">
+                <b data-i18n="style.single.title">Single Elite Mode</b>
+                <span data-i18n="style.single.body">Choose one mode. Best for short visitor flow.</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mode-select panel">
+          <div class="mode-select-head">
+            <h3 data-i18n="setup.modes">Elite Modes</h3>
+            <p data-i18n="setup.modesLead">Each mode tells visitors why your project matters.</p>
+          </div>
+          <div id="modeCards" class="mode-cards"></div>
+        </div>
+
+        <div class="start-row">
+          <button id="startArena" class="primary huge"><span data-i18n="setup.start">Launch Competition</span><i>↯</i></button>
+        </div>
+      </section>
+
+      <!-- ARENA -->
+      <section id="arena" class="view">
+        <div class="arena-grid">
+          <aside class="panel scoreboard-panel">
+            <div class="round-pill" id="roundPill">ROUND 1</div>
+            <h3 data-i18n="arena.scoreboard">Leaderboard</h3>
+            <div id="scoreboard" class="scoreboard"></div>
+            <div class="power-box">
+              <h4 data-i18n="arena.boosters">Boosters</h4>
+              <div class="boosters">
+                <button id="hintBtn"><b>?</b><span data-i18n="boost.hint">Hint</span></button>
+                <button id="doubleBtn"><b>x2</b><span data-i18n="boost.double">Double</span></button>
+                <button id="timeBtn"><b>+10</b><span data-i18n="boost.time">Time</span></button>
+              </div>
+            </div>
+          </aside>
+
+          <section class="panel challenge-panel">
+            <div class="challenge-top">
+              <div>
+                <span id="modeLabel" class="mode-label"></span>
+                <h2 id="challengeTitle"></h2>
+              </div>
+              <div class="timer-wrap">
+                <svg viewBox="0 0 120 120">
+                  <circle cx="60" cy="60" r="52" class="timer-bg"></circle>
+                  <circle cx="60" cy="60" r="52" class="timer-fg" id="timerCircle"></circle>
+                </svg>
+                <strong id="timerText">60</strong>
+              </div>
+            </div>
+
+            <div class="player-turn">
+              <span data-i18n="arena.turn">Current Turn</span>
+              <b id="currentPlayer"></b>
+            </div>
+
+            <div id="challengeBody" class="challenge-body"></div>
+            <div id="feedback" class="feedback"></div>
+
+            <div class="challenge-actions">
+              <button id="skipBtn" class="secondary"><span data-i18n="arena.skip">Skip</span></button>
+              <button id="nextBtn" class="primary"><span data-i18n="arena.next">Next</span><i>→</i></button>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- RESULTS -->
+      <section id="results" class="view">
+        <div class="results-grid">
+          <div class="panel final-panel">
+            <div class="lux-tag"><span></span><b data-i18n="results.kicker">Final Ceremony</b></div>
+            <h2 id="winnerTitle"></h2>
+            <p id="winnerSubtitle"></p>
+            <div id="podium" class="podium"></div>
+            <div id="performanceNotes" class="performance-notes"></div>
+            <div class="result-actions">
+              <button class="primary" data-nav="setup" data-i18n="results.playAgain">Run Another Competition</button>
+              <button class="secondary" onclick="window.print()" data-i18n="results.print">Print / Save Result</button>
+            </div>
+          </div>
+          <div class="panel reward-panel">
+            <h3 data-i18n="results.reward">Reward Recommendation</h3>
+            <div id="rewardCard"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESEARCH -->
+      <section id="research" class="view">
+        <div class="section-head">
+          <div class="lux-tag"><span></span><b data-i18n="research.kicker">Academic Core</b></div>
+          <h2 data-i18n="research.title">The game is built on the real ACAI research.</h2>
+          <p data-i18n="research.lead">This page is for doctors, professors, and judges who ask: “Where is the academic value?”</p>
+        </div>
+        <div class="research-grid">
+          <article class="research-card panel">
+            <b>01</b>
+            <h3 data-i18n="research.compression.title">Compression Lab</h3>
+            <p data-i18n="research.compression.body">Visitors balance quantization, pruning, and confidence filtering to hit the ACAI target: smaller models while retaining accuracy.</p>
+          </article>
+          <article class="research-card panel">
+            <b>02</b>
+            <h3 data-i18n="research.rag.title">RAG Evidence Sprint</h3>
+            <p data-i18n="research.rag.body">Visitors build a citation-backed answer flow: retrieve, rank, verify, and cite evidence.</p>
+          </article>
+          <article class="research-card panel">
+            <b>03</b>
+            <h3 data-i18n="research.agent.title">Agent Command</h3>
+            <p data-i18n="research.agent.body">Visitors learn the ACAI agent roles: Researcher, Advisor, Linguist, Reasoner, Verifier, and Knowledge Builder.</p>
+          </article>
+          <article class="research-card panel">
+            <b>04</b>
+            <h3 data-i18n="research.governance.title">Governance Council</h3>
+            <p data-i18n="research.governance.body">Visitors make privacy, access-control, and trust decisions suitable for university and enterprise AI.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- PRINT STUDIO -->
+      <section id="studio" class="view">
+        <div class="section-head">
+          <div class="lux-tag"><span></span><b data-i18n="studio.kicker">Luxury Print Studio</b></div>
+          <h2 data-i18n="studio.title">Everything needed beside the digital game.</h2>
+          <p data-i18n="studio.lead">Use the print templates file to prepare QR signs, executive gift cards, agent stickers, challenge cards, and chocolate labels.</p>
+        </div>
+        <div class="studio-grid">
+          <div class="panel studio-card"><b>01</b><h3 data-i18n="studio.cards.title">Executive Agent Cards</h3><p data-i18n="studio.cards.body">85×55mm premium cards with QR/NFC and matched result identity.</p></div>
+          <div class="panel studio-card"><b>02</b><h3 data-i18n="studio.stickers.title">Agent Stickers</h3><p data-i18n="studio.stickers.body">Six collectible stickers matching the six ACAI agents.</p></div>
+          <div class="panel studio-card"><b>03</b><h3 data-i18n="studio.challenge.title">Challenge Cards</h3><p data-i18n="studio.challenge.body">Physical prompt cards that let VIP visitors test the system.</p></div>
+          <div class="panel studio-card"><b>04</b><h3 data-i18n="studio.sign.title">Acrylic Table Signs</h3><p data-i18n="studio.sign.body">Luxury signs: Scan. Compete. Claim your ACAI card.</p></div>
+        </div>
+        <div class="start-row">
+          <a class="primary huge" href="print-templates.html" target="_blank"><span data-i18n="studio.open">Open Print Templates</span><i>↗</i></a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <template id="agentTemplate">
+    <div class="agent-token">
+      <img src="" alt="" />
+      <span></span>
+    </div>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

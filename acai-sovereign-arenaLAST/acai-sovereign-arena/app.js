@@ -11,7 +11,7 @@ en:{
 "setup.kicker":"Arena Setup","setup.title":"Choose your players and tournament style.","setup.lead":"Runs on an iPad, laptop, or large touch screen. For VIP guests, use the Grand Tournament. For quick booth traffic, choose a single elite mode.","setup.players":"Players","setup.style":"Tournament Style","style.grand.title":"Grand Tournament","style.grand.body":"All five modes. Best for judges and the main demonstration.","style.single.title":"Single Elite Mode","style.single.body":"Choose one mode. Best for a short visitor flow.","setup.modes":"Elite Modes","setup.modesLead":"Each mode shows visitors why the project matters.","setup.start":"Launch Competition",
 "mode.compression.short":"Efficiency","mode.rag.short":"Evidence","mode.quality.short":"Verify","mode.governance.short":"Governance","mode.agent.short":"Agents",
 "arena.scoreboard":"Leaderboard","arena.boosters":"Boosters","boost.hint":"Hint","boost.double":"Double","boost.time":"Time","arena.turn":"Current Turn","arena.skip":"Skip","arena.next":"Next",
-"results.kicker":"Final Ceremony","results.playAgain":"Run another competition","results.home":"Back to home","results.reward":"Recognition",
+"results.kicker":"Final Ceremony","results.playAgain":"Run another competition","results.home":"Back to home","results.reward":"Recognition","results.standings":"Final Standings",
 "research.kicker":"Academic Core","research.title":"The game is built on the real ACAI research.","research.lead":"This page is for the professors, doctors, and judges who ask: where is the academic value?","research.compression.title":"Efficient Models","research.compression.body":"ACAI is designed to run efficiently — a smaller, faster model that still answers reliably, so it can work on local devices and stay private.","research.rag.title":"Evidence & Citations","research.rag.body":"ACAI retrieves relevant sources and answers with citations, so a reader can trace where the information came from.","research.agent.title":"The Agent Team","research.agent.body":"Six specialised agents handle different jobs: Researcher, Advisor, Linguist, Reasoner, Verifier, and Knowledge Builder.","research.governance.title":"Responsible Governance","research.governance.body":"Privacy, controlled access, and an activity log make ACAI suitable for universities and institutions, not just demos.",
 "ui.player":"Player","ui.points":"pts","ui.streak":"streak","ui.winner":"Champion","ui.reward":"Present the champion with the ACAI recognition card and the matching agent card.","ui.good":"Strong decision.","ui.bad":"Not the strongest choice.","ui.hint":"Hint unlocked","ui.timeup":"Time is up.","ui.finish":"Finish Round","ui.selectedNone":"Selected order: none","ui.selected":"Selected order:","ui.placed":"Placed","ui.tapPlace":"Tap to place in order.","ui.research":"Research challenges","ui.competitors":"Competitors","ui.agentReward":"Recommended agent card"
 },
@@ -22,7 +22,7 @@ ar:{
 "setup.kicker":"إعداد الحلبة","setup.title":"اختر اللاعبين وأسلوب البطولة.","setup.lead":"يعمل على آيباد أو لابتوب أو شاشة لمس كبيرة. للضيوف المهمّين استخدم البطولة الكبرى، وللزوّار السريعين اختر وضعًا نخبويًا واحدًا.","setup.players":"اللاعبون","setup.style":"أسلوب البطولة","style.grand.title":"البطولة الكبرى","style.grand.body":"كل الأوضاع الخمسة. الأفضل للمحكّمين وللعرض الرئيسي.","style.single.title":"وضع نخبة واحد","style.single.body":"اختيار وضع واحد. مناسب لحركة الزوّار السريعة.","setup.modes":"الأوضاع النخبوية","setup.modesLead":"كل وضع يُظهر للزوّار لماذا يهمّ المشروع.","setup.start":"إطلاق المنافسة",
 "mode.compression.short":"الكفاءة","mode.rag.short":"الأدلة","mode.quality.short":"التحقّق","mode.governance.short":"الحوكمة","mode.agent.short":"الوكلاء",
 "arena.scoreboard":"لوحة النتائج","arena.boosters":"المعزّزات","boost.hint":"تلميح","boost.double":"مضاعفة","boost.time":"وقت","arena.turn":"الدور الحالي","arena.skip":"تخطٍّ","arena.next":"التالي",
-"results.kicker":"الحفل الختامي","results.playAgain":"تشغيل منافسة أخرى","results.home":"العودة للرئيسية","results.reward":"التقدير",
+"results.kicker":"الحفل الختامي","results.playAgain":"تشغيل منافسة أخرى","results.home":"العودة للرئيسية","results.reward":"التقدير","results.standings":"الترتيب النهائي",
 "research.kicker":"الجوهر الأكاديمي","research.title":"اللعبة مبنية على بحث ACAI الحقيقي.","research.lead":"هذه الصفحة للأساتذة والدكاترة والمحكّمين عندما يسألون: أين القيمة الأكاديمية؟","research.compression.title":"نماذج كفؤة","research.compression.body":"صُمِّم ACAI ليعمل بكفاءة — نموذج أصغر وأسرع يظلّ يجيب بموثوقية، ليعمل على الأجهزة المحلية ويحافظ على الخصوصية.","research.rag.title":"الأدلة والمصادر","research.rag.body":"يسترجع ACAI المصادر ذات الصلة ويجيب مع ذكر المراجع، ليتمكّن القارئ من تتبّع مصدر المعلومة.","research.agent.title":"فريق الوكلاء","research.agent.body":"ستة وكلاء متخصّصون يتولّون مهامًّا مختلفة: الباحث، المستشار، اللغوي، المفكّر، المدقّق، وباني المعرفة.","research.governance.title":"حوكمة مسؤولة","research.governance.body":"الخصوصية والوصول المحكوم وسجلّ النشاط تجعل ACAI مناسبًا للجامعات والمؤسسات، لا للعروض فقط.",
 "ui.player":"لاعب","ui.points":"نقطة","ui.streak":"سلسلة","ui.winner":"البطل","ui.reward":"قدّم للبطل بطاقة ACAI التقديرية وبطاقة الوكيل المطابقة.","ui.good":"قرار قوي.","ui.bad":"ليست أقوى إجابة.","ui.hint":"تم فتح التلميح","ui.timeup":"انتهى الوقت.","ui.finish":"إنهاء الجولة","ui.selectedNone":"الترتيب المختار: لا يوجد","ui.selected":"الترتيب المختار:","ui.placed":"تم وضعها","ui.tapPlace":"اضغط لوضعها في الترتيب.","ui.research":"تحديات بحثية","ui.competitors":"متنافسون","ui.agentReward":"بطاقة الوكيل المقترحة"
 }
@@ -215,6 +215,8 @@ function renderArena(){
  $("#challengeTitle").textContent=local(ch.qEn,ch.qAr);
  $("#currentPlayer").textContent=currentPlayer().name;
  $("#nextBtn").style.display=state.answered?"inline-flex":"none";
+ const lastRound=state.round>=state.queue.length-1;
+ const nb=$("#nextBtn").querySelector("span"); if(nb) nb.textContent=lastRound?local("See results","عرض النتائج"):tr("arena.next");
  renderScoreboard();
  $("#hintBtn").disabled=currentPlayer().boosts.hint<=0 || state.hinted || state.answered;
  $("#doubleBtn").disabled=currentPlayer().boosts.double<=0 || state.double || state.answered;
@@ -294,15 +296,27 @@ $("#timeBtn").addEventListener("click",()=>{const p=currentPlayer(); if(p.boosts
 function finish(){
  clearInterval(state.ticking); state.players.sort((a,b)=>b.score-a.score); nav("results");
  const winner=state.players[0]; const agent=AGENTS.find(a=>a.id===winner.agent)||AGENTS[0];
- $("#winnerTitle").textContent=`${tr("ui.winner")}: ${winner.name}`;
+ const solo=state.players.length===1;
+ $("#medalIcon").textContent=solo?"✦":"🏆";
+ $("#winnerTitle").textContent=solo?(local("Challenge Complete","اكتمل التحدي")):`${tr("ui.winner")}: ${winner.name}`;
  $("#winnerSubtitle").textContent=local("ACAI Sovereign Arena completed. The leaderboard is ready to display on the booth screen.","اكتملت حلبة ACAI. لوحة النتائج جاهزة للعرض على شاشة الجناح.");
- $("#podium").innerHTML=state.players.map((p,i)=>`<div class="podium-row"><div class="score-rank">${i+1}</div><div><b dir="auto">${p.name}</b><span>${p.streak} ${tr("ui.streak")}</span></div><strong>${p.score} ${tr("ui.points")}</strong></div>`).join("");
+ const medals=["🥇","🥈","🥉"];
+ $("#podium").innerHTML=state.players.map((p,i)=>`<div class="podium-row ${i===0?'gold':''}"><div class="score-rank">${medals[i]||(i+1)}</div><div class="pwrap"><b dir="auto">${p.name}</b><span>${p.streak} ${tr("ui.streak")}</span></div><strong>${p.score} ${tr("ui.points")}</strong></div>`).join("");
  $("#performanceNotes").innerHTML=`<div><b>${state.queue.length}</b><span>${tr("ui.research")}</span></div><div><b>${state.players.length}</b><span>${tr("ui.competitors")}</span></div><div><b>${agent.gift}</b><span>${tr("ui.agentReward")}</span></div>`;
- $("#rewardCard").innerHTML=`<div class="reward-agent"><img src="${agent.img}" onerror="this.src='assets/fallback-agent.svg'" alt=""><h4 dir="auto">${local(agent.en,agent.ar)}</h4><p>${tr("ui.reward")}</p></div>`;
+ $("#rewardCard").innerHTML=`<div class="reward-agent"><div class="reward-ring"><img src="${agent.img}" onerror="this.src='assets/fallback-agent.svg'" alt=""></div><h4 dir="auto">${local(agent.en,agent.ar)}</h4><p>${tr("ui.reward")}</p></div>`;
  confetti();
 }
 function playPing(good){if(!state.sounds)return; try{const ctx=new (window.AudioContext||window.webkitAudioContext)();const o=ctx.createOscillator();const g=ctx.createGain();o.connect(g);g.connect(ctx.destination);o.frequency.value=good?740:180;g.gain.value=.04;o.start();setTimeout(()=>{o.stop();ctx.close()},120)}catch(e){}}
-function confetti(){const c=$("#space"),ctx=c.getContext("2d");let w=c.width=innerWidth*devicePixelRatio,h=c.height=innerHeight*devicePixelRatio;let p=Array.from({length:170},()=>({x:Math.random()*w,y:-Math.random()*h/2,vx:(Math.random()-.5)*8,vy:2+Math.random()*7,r:3+Math.random()*7,col:["#d9b767","#00a3ff","#7c3dff","#ff7a18","#00d1c2"][Math.floor(Math.random()*5)]}));let frames=0;function draw(){drawSpace(true);p.forEach(a=>{a.x+=a.vx;a.y+=a.vy;ctx.fillStyle=a.col;ctx.fillRect(a.x,a.y,a.r*2,a.r)});if(frames++<170)requestAnimationFrame(draw);else drawSpace(false)}draw()}
+function confetti(){
+ const c=document.getElementById("confetti"); if(!c)return; const ctx=c.getContext("2d");
+ const dpr=devicePixelRatio||1; c.width=innerWidth*dpr; c.height=innerHeight*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+ const W=innerWidth,H=innerHeight;
+ const cols=["#d9b767","#f7df9d","#00a3ff","#7c3dff","#ff7a18","#00d1c2"];
+ let p=Array.from({length:190},()=>({x:Math.random()*W,y:-40-Math.random()*H/2,vx:(Math.random()-.5)*6,vy:2+Math.random()*6,w:6+Math.random()*8,h:9+Math.random()*12,rot:Math.random()*6,vr:-.2+Math.random()*.4,col:cols[Math.floor(Math.random()*cols.length)]}));
+ let frames=0;
+ (function draw(){ctx.clearRect(0,0,W,H);p.forEach(a=>{a.x+=a.vx;a.y+=a.vy;a.rot+=a.vr;ctx.save();ctx.translate(a.x,a.y);ctx.rotate(a.rot);ctx.fillStyle=a.col;ctx.fillRect(-a.w/2,-a.h/2,a.w,a.h);ctx.restore();});
+  if(frames++<210)requestAnimationFrame(draw);else ctx.clearRect(0,0,W,H);})();
+}
 function drawSpace(){const c=$("#space"),ctx=c.getContext("2d"),dpr=devicePixelRatio||1;if(!c.width){c.width=innerWidth*dpr;c.height=innerHeight*dpr}ctx.clearRect(0,0,c.width,c.height);ctx.fillStyle="rgba(255,255,255,.65)";for(let i=0;i<95;i++){const x=(Math.sin(i*999)*.5+.5)*c.width;const y=(Math.cos(i*777)*.5+.5)*c.height;const r=(i%4)+1;ctx.globalAlpha=.15+(i%8)/20;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill()}ctx.globalAlpha=1}
 window.addEventListener("resize",()=>{const c=$("#space");c.width=innerWidth*(devicePixelRatio||1);c.height=innerHeight*(devicePixelRatio||1);drawSpace()});
 drawSpace();

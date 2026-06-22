@@ -197,22 +197,27 @@
 
       <!-- RESULTS -->
       <section id="results" class="view">
-        <div class="results-grid">
-          <div class="panel final-panel">
-            <div class="lux-tag"><span></span><b data-i18n="results.kicker">Final Ceremony</b></div>
-            <h2 id="winnerTitle" dir="auto"></h2>
-            <p id="winnerSubtitle"></p>
+        <div class="ceremony panel">
+          <div class="ceremony-aura" aria-hidden="true"></div>
+          <div class="lux-tag center"><span></span><b data-i18n="results.kicker">Final Ceremony</b></div>
+          <div class="medallion"><span id="medalIcon">🏆</span></div>
+          <h2 id="winnerTitle" dir="auto"></h2>
+          <p id="winnerSubtitle"></p>
+          <div id="performanceNotes" class="performance-notes"></div>
+        </div>
+        <div class="results-lower">
+          <div class="panel podium-panel">
+            <h3 data-i18n="results.standings">Final Standings</h3>
             <div id="podium" class="podium"></div>
-            <div id="performanceNotes" class="performance-notes"></div>
             <div class="result-actions">
               <button class="primary" data-nav="setup" data-i18n="results.playAgain">Run another competition</button>
               <button class="secondary" data-nav="home" data-i18n="results.home">Back to home</button>
             </div>
           </div>
-          <div class="panel reward-panel">
+          <aside class="panel reward-panel">
             <h3 data-i18n="results.reward">Recognition</h3>
             <div id="rewardCard"></div>
-          </div>
+          </aside>
         </div>
       </section>
 
@@ -249,6 +254,7 @@
     </main>
   </div>
 
+  <canvas id="confetti" aria-hidden="true"></canvas>
   <script src="app.js"></script>
 </body>
 </html>
